@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-zqr6
+  namespace: mdsaud-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:56a29ef0f623043f8e6ad8e10b761c9e7cc91d86f7bc93ea58f00b90dec5b448
+        name: my-nodejs
+        resources: {}
+status: {}
