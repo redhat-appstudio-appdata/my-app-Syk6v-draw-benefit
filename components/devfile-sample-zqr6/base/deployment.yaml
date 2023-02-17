@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-zqr6
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:Syk6v-devfile-sample-zqr6
+      - image: quay.io/redhat-appstudio/user-workload@sha256:56a29ef0f623043f8e6ad8e10b761c9e7cc91d86f7bc93ea58f00b90dec5b448
         name: my-nodejs
         ports:
         - containerPort: 3001
